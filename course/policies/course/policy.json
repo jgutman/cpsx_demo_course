@@ -1,7 +1,8 @@
 {
     "course/course": {
         "advanced_modules": [
-            "cpsx"
+            "cpsx", 
+            "split_test"
         ], 
         "course_image": "Collabs.jpg", 
         "default_tab": "Courseware", 
@@ -27,6 +28,27 @@
             {
                 "name": "Course Info", 
                 "type": "course_info"
+            }
+        ], 
+        "user_partitions": [
+            {
+                "description": "The groups in this configuration can be mapped to cohort groups in the LMS.", 
+                "groups": [
+                    {
+                        "id": 1673897340, 
+                        "name": "Version_A", 
+                        "version": 1
+                    }, 
+                    {
+                        "id": 982792390, 
+                        "name": "Version_B", 
+                        "version": 1
+                    }
+                ], 
+                "id": 533587654, 
+                "name": "Content Group Configuration", 
+                "scheme": "cohort", 
+                "version": 2
             }
         ], 
         "xml_attributes": {

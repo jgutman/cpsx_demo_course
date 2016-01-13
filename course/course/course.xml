@@ -1,4 +1,5 @@
-<course advanced_modules="[&quot;cpsx&quot;]" course_image="Collabs.jpg" default_tab="Courseware" display_name="Collaborative Math" end="&quot;2015-09-23T23:00:00+00:00&quot;" invitation_only="true" ispublic="false" language="en" no_grade="true" show_calculator="true" showanswer="never" start="&quot;2015-09-18T15:00:00+00:00&quot;">
+<course advanced_modules="[&quot;cpsx&quot;, &quot;split_test&quot;]" course_image="Collabs.jpg" default_tab="Courseware" display_name="Collaborative Math" end="&quot;2015-09-23T23:00:00+00:00&quot;" invitation_only="true" ispublic="false" language="en" no_grade="true" show_calculator="true" showanswer="never" start="&quot;2015-09-18T15:00:00+00:00&quot;" user_partitions="[{&quot;name&quot;: &quot;Content Group Configuration&quot;, &quot;version&quot;: 2, &quot;groups&quot;: [{&quot;version&quot;: 1, &quot;id&quot;: 1673897340, &quot;name&quot;: &quot;Version_A&quot;}, {&quot;version&quot;: 1, &quot;id&quot;: 982792390, &quot;name&quot;: &quot;Version_B&quot;}], &quot;scheme&quot;: &quot;cohort&quot;, &quot;id&quot;: 533587654, &quot;description&quot;: &quot;The groups in this configuration can be mapped to cohort groups in the LMS.&quot;}]">
   <chapter url_name="MathTest"/>
+  <chapter url_name="179a42f4673b4e23a4088e9d055c52d4"/>
   <wiki slug="CollabAssess.CA101.2015h"/>
 </course>
