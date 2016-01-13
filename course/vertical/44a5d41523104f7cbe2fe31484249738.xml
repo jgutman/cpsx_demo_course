@@ -1,4 +1,5 @@
-<vertical display_name="Unit 1B">
-  <problem url_name="e35bc769cc2748f388cd55a85130c830"/>
-  <cpsx url_name="b3b4c1104b984172b83bdb9e8906740b" xblock-family="xblock.v1" group_access="{&#10;  &quot;533587654&quot;: [&#10;    982792390&#10;  ]&#10;}"/>
+<vertical display_name="Question 2">
+  <problem url_name="0fb284b372cc40269f96f082ad5cc6b9"/>
+  <problem url_name="d87bdbf48b0445bb8064d6e918613e18"/>
+  <cpsx url_name="2b9d049b44ab48e38e4b63c5e6638e78" xblock-family="xblock.v1" form_text="RoomName" group_size="2" display_name="Duplicate of 'Collaborative Problem Solving'" wait_time="5" group_access="{}"/>
 </vertical>
