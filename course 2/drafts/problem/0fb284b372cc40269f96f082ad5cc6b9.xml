@@ -1,0 +1,47 @@
+<problem display_name="Question 2" group_access="{}" markdown="null" max_attempts="2" weight="0.0">
+  <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  print expect, ans
+  ans = ans.strip("'")
+  ans = ans.strip('"')
+  return expect == ans.lower()
+
+def hint_fn(answer_ids, student_answers, new_cmap, old_cmap):
+  aid = answer_ids[0]
+  ans = str(student_answers[aid]).lower()
+  print 'hint_fn called, ans=', ans
+  hint = ''
+  if 'a' in ans:
+     hint = 'A = 8'
+  elif 'b' in ans:
+     hint = 'B = 6'
+  elif 'c' in ans:
+     hint = 'C = 5'
+  elif 'd' in ans:
+     hint = 'D = 8'
+  elif 'e' in ans:
+     hint = 'E = 12.8'
+  if hint:
+    hint = "&lt;font color='black'&gt; {0}&lt;/font&gt;".format(hint)
+    new_cmap.set_hint_and_mode(aid,hint,'always')
+    new_cmap.set_property(aid,'npoints',1)
+    new_cmap.set_property(aid,'correctness','corrrectnr')
+  else:     
+    hint = ' ' 
+    new_cmap.set_hint_and_mode(aid,hint,'always')
+    new_cmap.set_property(aid,'npoints',1)
+    new_cmap.set_property(aid,'correctness','corrrectnr')
+</script>
+  <p>
+    <center>
+      <img src="/static/001.jpeg"/>
+    </center>
+  </p>
+  <p> Solve for <b><i>x</i></b> with your partner. </p>
+  <p> You can obtain the length for any side other than <b><i>x</i></b> by entering the name of the side in the box below. For example if you would like to know the value of side A, enter <i> A</i> in the box. Both you and your partner can request a <b>maximumum of two</b> hints. 
+  </p>
+  <label>  
+Request hint: 
+      <customresponse cfn="test_str" expect="python"><textline correct_answer="python"/><hintgroup hintfn="hint_fn"/></customresponse>
+</label>
+</problem>

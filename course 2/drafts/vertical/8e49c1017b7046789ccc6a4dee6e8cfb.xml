@@ -1,0 +1,5 @@
+<vertical display_name="Question 3" parent_url="block-v1:edX+DemoX+Demo_Course+type@sequential+block@e691f8d1f25a4c40bd354524479c89cb" index_in_children_list="2">
+  <problem url_name="2009a0f8b71147e39eea00c0b3b9b7df"/>
+  <problem url_name="21760ed1784b45d5badf44e393715c69"/>
+  <cpsx url_name="fa2d9cec62ea46dd8146dada3c3d56e9" xblock-family="xblock.v1"/>
+</vertical>

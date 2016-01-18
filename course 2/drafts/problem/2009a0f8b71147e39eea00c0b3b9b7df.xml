@@ -1,0 +1,60 @@
+<problem display_name="Question 3" markdown="null" max_attempts="1">
+  <script type="text/python" system_path="python_lib">
+def test_str(expect, ans):
+  print expect, ans
+  ans = ans.strip("'")
+  ans = ans.strip('"')
+  return expect == ans.lower()
+
+def hint_fn(answer_ids, student_answers, new_cmap, old_cmap):
+  aid = answer_ids[0]
+  ans = str(student_answers[aid]).lower()
+  print 'hint_fn called, ans=', ans
+  hint = ''
+  if 'a' in ans:
+     hint = 'A = 48'
+  elif 'b' in ans:
+     hint = 'B = 30'
+  elif 'c' in ans:
+     hint = 'C = 12'
+  elif 'd' in ans:
+     hint = 'D = 6'
+  elif 'e' in ans:
+     hint = 'E = 24'
+  if hint:
+    hint = "&lt;font color='black'&gt; {0}&lt;/font&gt;".format(hint)
+    new_cmap.set_hint_and_mode(aid,hint,'always')
+    new_cmap.set_property(aid,'npoints',1)
+    new_cmap.set_property(aid,'correctness','corrrectnr')
+  else:     
+    hint = ' ' 
+    new_cmap.set_hint_and_mode(aid,hint,'always')
+    new_cmap.set_property(aid,'npoints',1)
+    new_cmap.set_property(aid,'correctness','corrrectnr')
+</script>
+  <p>
+    <center>
+      <img src="/static/q003.jpeg"/>
+    </center>
+  </p>
+  <p> The diagram is part of a scale drawing of a house. </p>
+  <p> Solve for <b><i>x</i></b> with your partner. </p>
+  <p> You can obtain the length for any side other than <b><i>x</i></b> by selecting the name of the side in the drop-down menu below. Both you and your partner can request a <b>maximumum of one hint each</b>. 
+  </p>
+  
+  <p><label> Request hint: </label></p>
+  <optionresponse>
+  <optioninput label=" Request hint: ">
+    <option correct="TRUE">A <optionhint> The length of A is 48. </optionhint></option>
+    <option correct="TRUE">B <optionhint> The length of B is 30. </optionhint></option>
+    <option correct="TRUE">C <optionhint> The length of C is 12. </optionhint></option>
+    <option correct="TRUE">D <optionhint> The length of D is 6. </optionhint></option>
+    <option correct="TRUE">E <optionhint> The length of E is 24. </optionhint></option>
+  </optioninput>
+</optionresponse>
+  
+   <label>  
+Request hint: 
+      <customresponse cfn="test_str" expect="A"><textline correct_answer="A"/><hintgroup hintfn="hint_fn"/></customresponse>
+</label>
+</problem>

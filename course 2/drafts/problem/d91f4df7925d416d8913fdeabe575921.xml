@@ -1,0 +1,37 @@
+<problem display_name="Question 4" group_access="{&quot;533587654&quot;: [1673897340]}" markdown="null" max_attempts="2">
+  <script type="text/python" system_path="python_lib">
+def hintfn1(answer_ids, student_answers, new_cmap, old_cmap):
+	global expect
+	aid = answer_ids[0]
+	ans = student_answers[aid]
+	if new_cmap.is_correct(aid):
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','corrrectnr')
+	else:
+		hint='Your answer has been submitted'
+		new_cmap.set_hint_and_mode(aid,hint,'always')
+		new_cmap.set_property(aid,'npoints',1)
+		new_cmap.set_property(aid,'correctness','incorrectnr')
+	old_cmap=new_cmap
+</script>
+  <p>
+    <p>
+    </p>
+    <p> In a school fund-raiser, students in class A and B sold boxes of cookies. What was the average number of cookies sold by all students in both classes? </p>
+    <p>
+  NOTE: Your partner can request information about class B.
+  </p>
+    
+    <p><label> Request hint: </label></p>
+  <optionresponse>
+  <optioninput label=" Request hint: ">
+    <option correct="TRUE">Number of students in class A<optionhint> 10 students </optionhint></option>
+    <option correct="TRUE">Average boxes sold per student in class A<optionhint> 4 boxes per student </optionhint></option>
+    <option correct="TRUE">Total boxes sold by class A<optionhint> 40 total boxes sold </optionhint></option>
+  </optioninput>
+    </optionresponse>
+    
+    <p style="display:inline"/></p>
+</problem>

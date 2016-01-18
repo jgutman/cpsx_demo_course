@@ -1,0 +1,5 @@
+<vertical display_name="Question 2" parent_url="block-v1:edX+DemoX+Demo_Course+type@sequential+block@e691f8d1f25a4c40bd354524479c89cb" index_in_children_list="1">
+  <problem url_name="0fb284b372cc40269f96f082ad5cc6b9"/>
+  <problem url_name="d87bdbf48b0445bb8064d6e918613e18"/>
+  <cpsx url_name="2b9d049b44ab48e38e4b63c5e6638e78" xblock-family="xblock.v1" form_text="RoomName" group_size="2" display_name="Duplicate of 'Collaborative Problem Solving'" wait_time="5" group_access="{}"/>
+</vertical>
